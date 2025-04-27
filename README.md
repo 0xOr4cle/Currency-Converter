@@ -66,3 +66,16 @@ python main.py -l EUR
 python main.py -c
 ```
 
+## 🔄 How It Works
+
+The converter uses the free Exchange Rates API (https://open.er-api.com/) to get the latest exchange rates. To reduce API calls, it caches the rates locally for 24 hours.
+
+When you convert a currency, the tool:
+1. Checks if it has cached exchange rates for your base currency
+2. Uses the cached rates if available and not expired
+3. Otherwise, fetches the latest rates from the API
+4. Performs the conversion and displays the result
+
+
+
+The cached rates are stored in `~/.currency_cache.json` on your system.
