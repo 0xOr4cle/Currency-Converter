@@ -76,6 +76,14 @@ When you convert a currency, the tool:
 3. Otherwise, fetches the latest rates from the API
 4. Performs the conversion and displays the result
 
+## 💡 Tips
+
+- Use currency codes (e.g., USD, EUR, JPY) rather than currency names
+- The `-a` option is useful for comparing exchange rates across multiple currencies
+- If you're offline, the tool will use cached rates if available
+- The cache expires after 24 hours to ensure reasonable accuracy
+- Clear the cache with `-c` to force fetching fresh rates
+
 
 
 The cached rates are stored in `~/.currency_cache.json` on your system.
