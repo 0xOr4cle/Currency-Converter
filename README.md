@@ -76,6 +76,8 @@ When you convert a currency, the tool:
 3. Otherwise, fetches the latest rates from the API
 4. Performs the conversion and displays the result
 
+The cached rates are stored in `~/.currency_cache.json` on your system.
+
 ## 💡 Tips
 
 - Use currency codes (e.g., USD, EUR, JPY) rather than currency names
@@ -84,6 +86,6 @@ When you convert a currency, the tool:
 - The cache expires after 24 hours to ensure reasonable accuracy
 - Clear the cache with `-c` to force fetching fresh rates
 
+## 📄 License
 
-
-The cached rates are stored in `~/.currency_cache.json` on your system.
+This project is licensed under the MIT License - see the LICENSE file for details.
