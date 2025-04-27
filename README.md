@@ -24,3 +24,18 @@ cd currency-converter
 chmod +x main.py
 ```
 
+## 🔍 Usage
+
+```bash
+python main.py [amount] [from_currency] [to_currency] [options]
+```
+
+## ⚙️ Options
+
+- `amount`: Amount to convert
+- `from_currency`: Source currency code (e.g., USD)
+- `to_currency`: Target currency code (e.g., EUR)
+- `-l, --list`: List all available currencies
+- `-a, --all`: Show conversion to all currencies
+- `-c, --clear-cache`: Clear cached exchange rates
+
