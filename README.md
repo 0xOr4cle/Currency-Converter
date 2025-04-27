@@ -15,7 +15,7 @@ A simple command-line currency converter using real-time exchange rates.
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/currency-converter.git
+git clone https://github.com/0xOr4cle/currency-converter.git
 cd currency-converter
 ```
 
@@ -38,4 +38,31 @@ python main.py [amount] [from_currency] [to_currency] [options]
 - `-l, --list`: List all available currencies
 - `-a, --all`: Show conversion to all currencies
 - `-c, --clear-cache`: Clear cached exchange rates
+
+## 📝 Examples
+
+### Convert a specific amount between two currencies:
+```bash
+python main.py 100 USD EUR
+```
+
+### Convert to all available currencies:
+```bash
+python main.py 100 USD -a
+```
+
+### List all available currencies:
+```bash
+python main.py -l
+```
+
+### List all available currencies with a specific base:
+```bash
+python main.py -l EUR
+```
+
+### Clear the exchange rates cache:
+```bash
+python main.py -c
+```
 
